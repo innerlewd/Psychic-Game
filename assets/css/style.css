@@ -1,0 +1,7 @@
+.centerText,
+#wins,
+#losses,
+#guesses,
+#game {
+    text-align: center;
+}
