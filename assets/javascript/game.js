@@ -1,9 +1,10 @@
 var computerChoices = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
-var computerGuess = computerChoices[Math.floor(Math.random()* computerChoices.length)];
+var computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
 var wins = 0;
 var losses = 0;
 var guessesLeft = 10;
 var guessArray = [];
+
 
 
 document.onkeyup = function (event) {
@@ -12,13 +13,15 @@ document.onkeyup = function (event) {
          var html = "You already guessed: [" + userGuess + "]" ;
          return document.getElementById("game").innerHTML = html;
      } else guessArray.push(userGuess); {}
+     
+
 
     if (computerGuess == userGuess) {
         alert("You Win")
         wins++;
         guessArray = [];
         guessesLeft = 10;
-        computerChoices[Math.floor(Math.random() * computerChoices.length)];
+        computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
     }
 
     if (computerGuess != userGuess) {

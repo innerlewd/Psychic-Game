@@ -4,4 +4,15 @@
 #guesses,
 #game {
     text-align: center;
+    float: initial;
+}
+#logo {
+    display: block;
+    height: 200px;
+    margin-right: auto;
+    margin-left: auto;
+}
+body {
+    background-color: burlywood;
+    
 }
